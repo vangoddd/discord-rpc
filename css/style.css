@@ -1,0 +1,29 @@
+html {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.75em;
+}
+
+body {
+    background-image: url('../img/chenBg.png');
+    background-size: cover;
+}
+
+
+.wrapper {
+    position: absolute;
+    width:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.ds {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}

@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "YTMusic Reader",
+    "version": "1.0",
+  
+    "description": "Reads a yt music playing music and write it into a file",
+
+    "permissions": [
+        "tabs",
+        "storage",
+        "http://localhost/*"
+    ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "vangod@example.com",
+        "strict_min_version": "42.0"
+      }
+    } ,   
+
+    "background": {
+        "scripts": ["bg.js"]
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.music.youtube.com/*"],
+        "js": ["ytmusic.js"]
+      }
+    ]
+  
+  }
